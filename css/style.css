@@ -82,12 +82,12 @@ body {
   color: #606060;
   font-size: 3rem;
   font-weight: 300;
-  margin: 8rem 0;
+  margin: 4rem 0;
 }
 
 .content__house {
-  width: 55vw;
-  height: auto;
+  height: 30vw;
+  width: auto;
 }
 
 .content__button {
@@ -104,4 +104,75 @@ body {
 .content__button:hover {
   background-color: #143952;
   cursor: pointer;
+}
+
+.footer {
+  margin: 0 5rem;
+  display: flex;
+}
+
+.footer-search {
+  width: 80%;
+}
+
+.search__bar-bar {
+  border: 0;
+  border-bottom: black 0.1rem solid;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: start;
+}
+
+.search__button {
+  border: 0;
+  font-family: Poppins;
+  background-color: white;
+  margin: 0 3rem;
+  width: 20rem;
+  height: 10rem;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.14);
+}
+
+.search__search {
+  border: 0;
+  font-family: Poppins;
+  background-color: #F43C4F;
+  color: #f7fafe;
+  font-size: 3rem;
+  box-shadow: black 1rem;
+  margin: 0 3rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.search-button__title {
+  font-size: 3rem;
+  color: #143952;
+  font-weight: 500;
+}
+
+.search-button__info {
+  font-size: 2rem;
+  color: #929292;
+  font-weight: 300;
+}
+
+.footer-info {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  color: black;
+  margin-top: 8rem;
+}
+
+.footer-info__desc {
+  font-size: 3rem;
+}
+
+.footer-info__loc {
+  font-size: 3rem;
 }
