@@ -1,0 +1,30 @@
+$pri: #143952;
+$sec:  #F43C4F;
+$w: #f7fafe;
+$t: #606060;
+
+$a: calc(1vh + 1vw);
+$sa: calc(vh + 5vw);
+
+@media (max-width: 1000px) {
+
+    .content-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content__house {
+        display: none;
+    }
+
+    .content__title {
+        font-size: calc(#{$a} * 5.5);
+        margin-top: calc(1vh + 1vw);
+        text-align: center;
+    }
+
+    .content__subtitle {
+    }
+
+}

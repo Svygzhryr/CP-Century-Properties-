@@ -15,7 +15,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 5rem;
+  padding: 3rem 5rem;
 }
 
 .header__items {
@@ -24,18 +24,18 @@ body {
 }
 
 .header__logo {
-  width: 25rem;
+  width: 15vw;
   height: auto;
 }
 
 .header-button {
-  font-size: 3rem;
-  margin: 0 4rem;
+  font-size: calc(calc(1vh + 1vw) * 1.2);
+  margin: 0 calc(calc(1vh + 1vw) * 1);
   transition: all .2s;
 }
 
 .header-button:last-child {
-  margin-left: 6rem;
+  margin-left: calc(calc(1vh + 1vw) * 1.2);
   margin-right: 0;
   background-color: #F43C4F;
   color: #f7fafe;
@@ -43,7 +43,7 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 1rem;
-  font-size: 2.5rem;
+  font-size: calc(calc(1vh + 1vw) * 1.2);
 }
 
 .header-button:last-child:hover {
@@ -74,13 +74,13 @@ body {
 }
 
 .content__title {
-  font-size: 10rem;
+  font-size: calc(calc(1vh + 1vw) * 3.5);
   font-weight: 700;
 }
 
 .content__subtitle {
   color: #606060;
-  font-size: 3rem;
+  font-size: calc(calc(1vh + 1vw) * 1.2);
   font-weight: 300;
   margin: 4rem 0;
 }
@@ -131,8 +131,8 @@ body {
   border: 0;
   font-family: Poppins;
   background-color: white;
-  margin: 0 3rem;
-  width: 20rem;
+  margin: 0 calc((1vw + 1vh) * 0.8);
+  width: 12vw;
   height: 10rem;
   box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.14);
   transition: all .2s;
@@ -156,7 +156,7 @@ body {
   font-family: Poppins;
   background-color: #F43C4F;
   color: #f7fafe;
-  font-size: 3rem;
+  font-size: calc(calc(1vh + 1vw) * 1.1);
   box-shadow: black 1rem;
   margin: 0 3rem;
   width: 20rem;
@@ -171,13 +171,13 @@ body {
 }
 
 .search-button__title {
-  font-size: 3rem;
+  font-size: calc(calc(1vh + 1vw) * 1.1);
   color: #143952;
   font-weight: 500;
 }
 
 .search-button__info {
-  font-size: 2rem;
+  font-size: calc(calc(1vh + 1vw) * 0.7);
   color: #929292;
   font-weight: 300;
 }
@@ -191,11 +191,11 @@ body {
 }
 
 .footer-info__desc {
-  font-size: 3rem;
+  font-size: calc(calc(1vh + 1vw) * 1.2);
 }
 
 .footer-info__loc {
-  font-size: 3rem;
+  font-size: calc(calc(1vh + 1vw) * 1.2);
 }
 
 .search__field {

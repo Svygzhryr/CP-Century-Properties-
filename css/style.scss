@@ -5,6 +5,9 @@ $sec:  #F43C4F;
 $w: #f7fafe;
 $t: #606060;
 
+$a: calc(1vh + 1vw);
+$sa: calc(vh + 5vw);
+
 body {
     font-family: Poppins;
     color: $pri;
@@ -23,7 +26,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
 }
 
 .header__items {
@@ -32,18 +35,18 @@ body {
 }
 
 .header__logo {
-    width: 25rem;
+    width: 15vw;
     height: auto;
 }
 
 .header-button {
-    font-size: 3rem;
-    margin: 0 4rem;
+    font-size: calc(#{$a} * 1.2);
+    margin: 0  calc(#{$a} * 1);
 
     transition: all .2s;
 
     &:last-child {
-        margin-left: 6rem;
+        margin-left: calc(#{$a} * 1.2);
         margin-right: 0;
         background-color: $sec;
         color: $w;
@@ -55,7 +58,7 @@ body {
 
         border-radius: 1rem;
 
-        font-size: 2.5rem;
+        font-size: calc(#{$a} * 1.2);
 
         &:hover {
             color: $pri;
@@ -87,13 +90,13 @@ body {
 }
 
 .content__title {
-    font-size: 10rem;
+    font-size: calc(#{$a} * 3.5);
     font-weight: 700;
 }
 
 .content__subtitle {
     color: $t;
-    font-size: 3rem;
+    font-size: calc(#{$a} * 1.2);
     font-weight: 300;
     margin: 4rem 0;
 }
@@ -146,9 +149,9 @@ body {
     font-family: Poppins;
     background-color: white;
 
-    margin: 0 3rem;
+    margin: 0 calc((1vw + 1vh) * 0.8);
 
-    width: 20rem;
+    width: 12vw;
 
     height: 10rem;
 
@@ -175,7 +178,7 @@ body {
     font-family: Poppins;
     background-color: $sec;
     color: $w;
-    font-size: 3rem;
+    font-size: calc(#{$a} * 1.1);
     box-shadow: black 1rem;
 
     margin: 0 3rem;
@@ -193,13 +196,13 @@ body {
 }
 
 .search-button__title {
-    font-size: 3rem;
+    font-size: calc(#{$a} * 1.1);
     color: $pri;
     font-weight: 500;
 }
 
 .search-button__info {
-    font-size: 2rem;
+    font-size: calc(#{$a} * 0.7);
     color:#929292;
     font-weight: 300;
 }
@@ -214,11 +217,13 @@ body {
 }
 
 .footer-info__desc {
-    font-size: 3rem;
+    font-size: calc(#{$a} * 1.2);
+
 }
 
 .footer-info__loc {
-    font-size: 3rem;
+    font-size: calc(#{$a} * 1.2);
+
 
 }
 
