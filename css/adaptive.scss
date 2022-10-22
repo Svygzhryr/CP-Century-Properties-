@@ -9,10 +9,17 @@ $sa: calc(vh + 5vw);
 @media (max-width: 1000px) {
 
     .header__logo {
-        max-width: 10rem;
+        max-width: 20rem;
         width: 100%;
-        height: 5rem;
+        height: auto;
         text-align: center;
+
+        display: none;
+    }
+
+    .header__items {
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .content-info {
@@ -33,6 +40,14 @@ $sa: calc(vh + 5vw);
 
     .content__subtitle {
     }
+
+    .footer-info {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 710px) {
+    
 }
 
 @media (max-width: 550px) {
@@ -43,5 +58,134 @@ $sa: calc(vh + 5vw);
 
     .footer {
         display: block;
+    }
+}
+
+@media (max-width: 410px) {
+    .header {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-button {
+        font-size: 2rem;
+        width: 40%;
+
+        padding: 0.3rem;
+        margin: 1rem;
+        margin-top: 1rem;
+
+        background-color: $sec;
+        color: $w;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .header-button--active {
+        color: $sec;
+        background-color: transparent;
+
+        &:hover {
+            color: $sec;
+        }
+    }
+
+    .header-button:last-child {
+        padding: 0.3rem;
+        background-color: $sec;
+        color: $w;
+        width: 40%;
+        border-radius: 0;
+
+        margin: 1rem;
+        margin-top: 1rem;
+
+        &:hover {
+            color: $sec;
+            background-color: transparent;
+        }
+        font-size: 2rem;
+    }
+
+    .content__title {
+        margin-top: 5vh;
+    }
+
+    .content__subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.6;
+        margin: 2rem 0;
+    }
+
+    .footer-search {
+        width: 100%;
+    }
+
+    .search__bar {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .search-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search__button {
+        margin: 0.5rem;
+        width: 40%;
+        height: 5rem;
+
+    }
+
+    .search-button__title {
+        font-size: 2rem;
+    }
+
+    .search-button__info {
+        font-size: 1rem;
+    }
+
+    .search__search {
+        margin: 0.5rem;
+        width: 40%;
+        height: 5rem;
+
+        font-size: 2rem;
+    }
+
+    .footer-info {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .footer-info__desc {
+        font-size: 2rem;
+    }
+
+    .footer-info__loc {
+        font-size: 2rem;
+
     }
 }
