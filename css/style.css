@@ -137,6 +137,7 @@ body {
   height: 15vh;
   box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.14);
   transition: all .2s;
+  position: relative;
 }
 
 .search__button:hover {
@@ -150,6 +151,15 @@ body {
 
 .search__button:hover .search-button__info {
   color: #f7fafe;
+}
+
+.search-popup {
+  display: none;
+  z-index: 10;
+}
+
+.search__button--active {
+  background-color: black;
 }
 
 .search__search {
