@@ -176,13 +176,48 @@ body {
     }
 }
 
-.search-popup {
-    display: none;
+.search-popup{ 
+    position: absolute;
+    font-size: 3rem;
+
+    color: $pri;
+    text-align: center;
+    background-color: white;
+
+    width: 100%;
+
+    top: -100%;
+    left: 0;
+
+    transform: translate(0, 20%);
+
     z-index: 10;
+
+    display: none;
+
+}
+
+.search-popup--last {
+    top: -40%;
+    z-index: 10;
+
+    display: none;
+}
+
+.popup__item {
+
+
+    &:hover {
+        cursor: pointer;
+        background-color: $pri;
+        color: $w;
+    }
 }
 
 .search__button--active {
-    background-color: black;
+    display: block;
+
+    position: absolute;
 }
 
 .search__search {

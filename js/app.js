@@ -1,4 +1,5 @@
-let b = document.querySelectorAll('.search__button')
+let b = document.querySelectorAll('.search__button');
+let p = document.querySelectorAll('.search-popup');
 
 b.forEach(e => {
 
