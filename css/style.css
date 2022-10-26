@@ -147,10 +147,12 @@ body {
 
 .search__button:hover .search-button__title {
   color: #f7fafe;
+  pointer-events: none;
 }
 
 .search__button:hover .search-button__info {
   color: #f7fafe;
+  pointer-events: none;
 }
 
 .search-popup {
@@ -165,12 +167,15 @@ body {
   transform: translate(0, 20%);
   z-index: 10;
   display: none;
+  transition: opacity .2s;
+  transform: translate(0, 120%);
 }
 
 .search-popup--last {
   top: -40%;
   z-index: 10;
   display: none;
+  transition: all .2s;
 }
 
 .popup__item:hover {
@@ -181,6 +186,7 @@ body {
 
 .search__button--active {
   display: block;
+  opacity: 100%;
   position: absolute;
 }
 

@@ -1,16 +1,16 @@
 let b = document.querySelectorAll('.search__button');
-let p = document.querySelectorAll('.search-popup');
+console.log(b.childNodes)
 
 b.forEach(e => {
 
     function appear() {
         let classActive = 'search__button--active';
-
-        if (e.classList.contains(classActive)) {
-            e.classList.remove(classActive)
-        } else e.classList.add(classActive);
-        
+        let popup = e.querySelector('.search-popup')
+        if (popup.classList.contains(classActive) && event.target === event.currentTarget) {
+            popup.classList.remove(classActive)
+        } else popup.classList.add(classActive);
+        popup.style.transform = 'translate(0, 20%)';
     }
     
-    e.addEventListener('click', appear);
+    e.addEventListener('mousedown', appear);
 })

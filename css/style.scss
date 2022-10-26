@@ -168,10 +168,13 @@ body {
 
         .search-button__title {
             color: $w;
+            pointer-events: none;
+
         }
 
         .search-button__info {
             color: $w;
+            pointer-events: none;
         }
     }
 }
@@ -195,6 +198,9 @@ body {
 
     display: none;
 
+    transition: opacity .2s;
+
+    transform: translate(0, 120%);
 }
 
 .search-popup--last {
@@ -202,6 +208,9 @@ body {
     z-index: 10;
 
     display: none;
+
+    transition: all .2s;
+
 }
 
 .popup__item {
@@ -216,7 +225,7 @@ body {
 
 .search__button--active {
     display: block;
-
+    opacity: 100%;
     position: absolute;
 }
 
