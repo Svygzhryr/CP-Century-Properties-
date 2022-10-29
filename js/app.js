@@ -1,4 +1,6 @@
 let b = document.querySelectorAll('.search__button');
+let popup = document.querySelectorAll('.popup__item');
+let search = document.querySelector('.popup__input')
 console.log(b.childNodes)
 
 b.forEach(e => {
@@ -12,5 +14,28 @@ b.forEach(e => {
         popup.style.transform = 'translate(0, 20%)';
     }
     
-    e.addEventListener('mousedown', appear);
+    e.addEventListener('click', appear);
 })
+
+popup.forEach(e => {
+    function change() {
+        let text = e.textContent;
+        let btn = e.closest('.search__button');
+        btn.querySelector('.search-button__info').innerHTML = text;
+    }
+
+    e.addEventListener('click', change)
+})
+
+function changeInput() {
+    let data = search.value;
+    let btn = search.closest('.search__button');
+    btn.querySelector('.search-button__info').innerHTML = '$' + data + 'k';
+    
+}
+
+search.addEventListener('change', changeInput)
+
+
+
+
