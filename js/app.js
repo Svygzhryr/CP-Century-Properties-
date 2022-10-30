@@ -7,11 +7,14 @@ b.forEach(e => {
 
     function appear() {
         let classActive = 'search__button--active';
-        let popup = e.querySelector('.search-popup')
+        let popup = e.querySelector('.search-popup');
+        let item = e.querySelectorAll('.popup__item')
         if (popup.classList.contains(classActive) && event.target === event.currentTarget) {
             popup.classList.remove(classActive)
         } else popup.classList.add(classActive);
         popup.style.transform = 'translate(0, 20%)';
+        popup.style.background = 'white'
+        item.forEach(e => {e.style.opacity = 1;})
     }
     
     e.addEventListener('click', appear);
