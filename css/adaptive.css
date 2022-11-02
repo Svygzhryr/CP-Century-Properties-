@@ -26,6 +26,13 @@
   .footer-info {
     margin-top: 5rem;
   }
+  .search-popup {
+    transform: translate(0, 20%);
+    font-size: calc(calc(1vh + 1vw) * 1.55);
+  }
+  .popup__input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 710px) {
@@ -42,6 +49,9 @@
     height: 8vh;
     margin: 1rem calc((1vw + 1vh) * 0.8);
   }
+  .search-popup {
+    transform: translate(0, -18%);
+  }
 }
 
 @media (max-width: 555px) {
@@ -50,6 +60,9 @@
   }
   .footer {
     display: block;
+  }
+  .search-popup {
+    transform: translate(0, -40%);
   }
 }
 

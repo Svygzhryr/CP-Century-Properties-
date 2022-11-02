@@ -46,10 +46,20 @@ $sa: calc(vh + 5vw);
     }
 
     .search-popup {
+        transform: translate(0, 20%);
+        font-size: calc(#{$a} * 1.55);
     }
     
     .search__button--active {
         
+    }
+
+    .search-popup--last {
+
+    }
+
+    .popup__input {
+        width: 100%;
     }
 }
 
@@ -69,6 +79,10 @@ $sa: calc(vh + 5vw);
         height: 8vh;
         margin: 1rem calc((1vw + 1vh) * 0.8);
     }
+
+    .search-popup {
+        transform: translate(0, -18%);
+    }
 }
 
 @media (max-width: 555px) {
@@ -79,6 +93,10 @@ $sa: calc(vh + 5vw);
 
     .footer {
         display: block;
+    }
+
+    .search-popup {
+        transform: translate(0, -40%);
     }
 }
 

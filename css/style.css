@@ -164,13 +164,12 @@ body {
   width: 100%;
   top: -100%;
   left: 0;
-  transform: translate(0, 20%);
   z-index: 10;
   display: none;
   opacity: 0;
   transition: opacity .2s;
   transition: all .2s ease;
-  transform: translate(0, 120%);
+  transform: translate(0, 20%);
   transition: transform .5s;
 }
 
